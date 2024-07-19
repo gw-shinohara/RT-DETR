@@ -7,8 +7,8 @@ train_dataloader:
   type: DataLoader
   dataset: 
     type: CocoDetection
-    img_folder: ./dataset/ThermalDogsAndPeople/train/
-    ann_file: ./dataset/ThermalDogsAndPeople/train/_annotations.coco.json
+    img_folder: ./configs/dataset/ThermalDogsAndPeople/train
+    ann_file: ./configs/dataset/ThermalDogsAndPeople/train/_annotations.coco.json
     transforms:
       type: Compose
       ops: ~
@@ -21,8 +21,8 @@ val_dataloader:
   type: DataLoader
   dataset: 
     type: CocoDetection
-    img_folder: ./dataset/ThermalDogsAndPeople/valid/
-    ann_file: ./dataset/ThermalDogsAndPeople/valid/_annotations.coco.json
+    img_folder: ./configs/dataset/ThermalDogsAndPeople/valid/
+    ann_file: ./configs/dataset/ThermalDogsAndPeople/valid/_annotations.coco.json
     transforms:
       type: Compose
       ops: ~ 
