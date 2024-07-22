@@ -16,3 +16,11 @@ install: build_venv
 train:
 	. .venv/bin/activate && \
 	bash rtdetr_pytorch/tools/train.sh
+
+predict:
+	. .venv/bin/activate && \
+	bash rtdetr_pytorch/tools/predict.sh
+
+predict_from_dir:
+	. .venv/bin/activate && \
+	bash rtdetr_pytorch/tools/predict_from_dir.sh
